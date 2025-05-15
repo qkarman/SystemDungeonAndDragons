@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f18f686c-e9c8-450d-9aa5-7ed83ce92036" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/clases/MenuPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/eventosAleatorios/EventoHabilidadesSecretas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/eventosAleatorios/EventoRecompesas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/eventosAleatorios/EventoTrampas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/objetosYcondicionales/Oro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/objetosYcondicionales/ReductorDeVida.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,16 +35,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.MenuPrincipal.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/st/OneDrive/Escritorio/Proyectos Avanzados Con todas las Herramientas/SystemDungeonAndDragons/src/main/java/Sistema_Inventario/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MenuPrincipal.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/st/OneDrive/Escritorio/Proyectos Avanzados Con todas las Herramientas/SystemDungeonAndDragons/src/main/java/Sistema_Inventario/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="MenuPrincipal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="clases.MenuPrincipal" />
