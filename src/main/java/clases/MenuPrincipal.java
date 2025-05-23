@@ -1,4 +1,7 @@
 package clases;
+import eventosAleatorios.EventoRecompesas;
+import personaje.BolsaPersonaje;
+
 import java.util.*;
 import javax.swing.JOptionPane;
 
@@ -9,6 +12,10 @@ public class MenuPrincipal
 {
     //Creamos la variable global para nuestro menu
     protected int opcion;
+
+    //Intancias de bolsa y oro
+    EventoRecompesas invocar = new EventoRecompesas();
+    BolsaPersonaje invocaion = new BolsaPersonaje();
 
     //*Creamos el metodo main para hacer pruebas unitarias del codigo
     public static void main(String[] args)
@@ -33,7 +40,12 @@ public class MenuPrincipal
 
                 switch (opcion)
                 {
-                    case 1 -> System.out.println("hola");
+                    case 1 ->
+                    {
+                        invocar.recompensaOro(invocaion);
+                        System.out.println("Oro total: " + invocaion.getAlmacenOro());
+                    }
+
                     case 2 -> System.out.println("Como estas");
                     default -> System.out.println("Seleccionaste algo mal");
                 }

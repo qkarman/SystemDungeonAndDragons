@@ -1,5 +1,5 @@
 package eventosAleatorios;
-import objetosYcondicionales.Oro;
+import personaje.BolsaPersonaje;
 
 import java.util.*;
 import javax.swing.JOptionPane;
@@ -9,34 +9,51 @@ public class EventoRecompesas
     //Creamos las variables del random
     private final Random random = new Random();
 
-    //Creamos una variable global
-    Oro oroCofre = new Oro(20);
+    //Creamos el main para hacer pruebas unitarias
+    public static void main(String[] args)
+    {
+        BolsaPersonaje bolsaTotal = new BolsaPersonaje();
+        EventoRecompesas invocacion = new EventoRecompesas();
+        invocacion.recompensaOro(bolsaTotal);
+    }
 
     //Creamos el metodo donde va a estar el primer evento de recompensa
-    public void recompensaOro()
+    public void recompensaOro(BolsaPersonaje bolsa)
     {
-        try
+        boolean opcion = true;
+        while(opcion)
         {
-            int open = Integer.parseInt(JOptionPane.showInputDialog(null,"!!Has tomado un camino en el cual esta un cofre oculto " +
-                    "Deseas abrilo?" +
-                    "1.- Si" +
-                    "2.- No"));
-
-            switch (open)
+            try
             {
-                case 1 ->
-                {
+                int open = Integer.parseInt(JOptionPane.showInputDialog(null,"!!Has tomado un camino en el cual esta un cofre oculto " +
+                        "Deseas abrilo?" +
+                        "1.- Si" +
+                        "2.- No"));
 
-                    oroCofre.Recoger(); //Marcamos que esta recogido
-                    JOptionPane.showMessageDialog(null,"Has abierto el cofre y recibes "+ oroCofre.getCantidad() + "Piezas de oro");
+                switch (open)
+                {
+                    case 1 ->
+                    {
+                        int cantidadAleatoria = random.nextInt(30) + 20;
+                        bolsa.setAlmacenOro(bolsa.getAlmacenOro() + cantidadAleatoria);
+
+                        JOptionPane.showMessageDialog(null,"Has abierto el cofre y recibes "+  cantidadAleatoria + "Piezas de oro");
+                        System.out.println("Total de Oro: " + bolsa.getAlmacenOro());
+                        opcion = false;
+                    }
+                    case 2 ->
+                    {
+                        JOptionPane.showMessageDialog(null,"Perdiste el oro del cofre");
+                        opcion = false;
+                    }
+
+                    default -> JOptionPane.showMessageDialog(null,"Entrada invalida intenta de nuevo");
                 }
-                case 2 -> JOptionPane.showMessageDialog(null,"Perdiste el oro del cofre");
-                default -> JOptionPane.showMessageDialog(null,"Entrada invalida intenta de nuevo");
             }
-        }
-        catch (Exception e)
-        {
-            System.out.println("Seleccionaste algo mal en la decision: " + e.getMessage());
+            catch (Exception e)
+            {
+                System.out.println("Seleccionaste algo mal en la decision: " + e.getMessage());
+            }
         }
     }
 }
