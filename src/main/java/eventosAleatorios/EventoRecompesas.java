@@ -14,7 +14,9 @@ public class EventoRecompesas
     {
         BolsaPersonaje bolsaTotal = new BolsaPersonaje();
         EventoRecompesas invocacion = new EventoRecompesas();
+        EventoTrampas prueba = new EventoTrampas();
         invocacion.recompensaOro(bolsaTotal);
+        prueba.trampaCofre(bolsaTotal);
     }
 
     //Creamos el metodo donde va a estar el primer evento de recompensa

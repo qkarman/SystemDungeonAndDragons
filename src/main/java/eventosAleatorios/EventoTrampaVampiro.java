@@ -1,28 +1,26 @@
 package eventosAleatorios;
-import personaje.BolsaPersonaje;
 
-import java.util.*;
-import javax.swing.JOptionPane;
+import personaje.StatsPersonaje;
+
+import javax.swing.*;
+import java.util.Random;
 
 /**
- * Aqui vamos a crear una trampa la cual un duende te va a robar tu oro dentro del cofre
+ * Sigue en proceso este evento
  */
-
-public class EventoTrampas
+public class EventoTrampaVampiro
 {
-    //Creamos una variable global random
+    //Instancia Random
     Random aleatorio = new Random();
 
     //Creamos el metodo main para hacer pruebas unitarias
     public static void main(String[] args)
     {
-        BolsaPersonaje bolsaTotal = new BolsaPersonaje();
-        EventoTrampas prueba = new EventoTrampas();
-        prueba.trampaCofre(bolsaTotal);
+
     }
 
-    //Creamos el evento trampa de cofre
-    public void trampaCofre(BolsaPersonaje bolsa)
+    //Creamos el metodo del trampa vampiro
+    public void trampaVampiro(StatsPersonaje personaje)
     {
         boolean opcion = true;
 
@@ -30,8 +28,9 @@ public class EventoTrampas
         {
             try
             {
-                int open = Integer.parseInt(JOptionPane.showInputDialog(null,"!!Has tomado un camino en el cual esta un cofre oculto " +
-                        "Deseas abrilo?" +
+                int open = Integer.parseInt(JOptionPane.showInputDialog(null,
+                        "!!Has tomado un camino en el cual esta muy oscuro.... " +
+                        " pero alcanzas a ver una silueta te acercas a ella? " +
                         "1.- Si" +
                         "2.- No"));
 
@@ -39,7 +38,7 @@ public class EventoTrampas
                 {
                     case 1 ->
                     {
-                        int cantidadAleatoria = aleatorio.nextInt(11) + 10;
+                        int impacto = aleatorio.nextInt(1) + 5;
                         bolsa.setAlmacenOro(bolsa.getAlmacenOro() - cantidadAleatoria);
 
                         if(bolsa.getAlmacenOro() < cantidadAleatoria)
@@ -49,14 +48,14 @@ public class EventoTrampas
 
                         bolsa.setAlmacenOro(bolsa.getAlmacenOro() - cantidadAleatoria);
 
-                        JOptionPane.showMessageDialog(null,"Has abierto el cofre y te das cuenta que sale un duende" +
-                                "y te roba parte de tu oro: " +  cantidadAleatoria + "Piezas de oro");
-                        System.out.println("Total de Oro: " + bolsa.getAlmacenOro());
+                        JOptionPane.showMessageDialog(null,"te acercas y te das cuenta que es un " +
+                                "vampiro, te chupa y roba" +  cantidadAleatoria + "puntos de vida");
+                        System.out.println("Total de vida: " + bolsa.getAlmacenOro());
                         opcion = false;
                     }
                     case 2 ->
                     {
-                        JOptionPane.showMessageDialog(null,"Te libraste de una trampa");
+                        JOptionPane.showMessageDialog(null,"Te libraste de un vampiro ");
                         opcion = false;
                     }
 
