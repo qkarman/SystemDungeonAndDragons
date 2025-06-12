@@ -6,7 +6,7 @@ import javax.swing.*;
 import java.util.Random;
 
 /**
- * Sigue en proceso este evento
+ * Se a completo
  */
 public class EventoTrampaVampiro
 {
@@ -16,7 +16,9 @@ public class EventoTrampaVampiro
     //Creamos el metodo main para hacer pruebas unitarias
     public static void main(String[] args)
     {
-
+        StatsPersonaje heroe = new StatsPersonaje(100,23,"Cristian","Luz","Oscuridad");
+        EventoTrampaVampiro vampiro = new EventoTrampaVampiro();
+        vampiro.trampaVampiro(heroe);
     }
 
     //Creamos el metodo del trampa vampiro
@@ -29,28 +31,21 @@ public class EventoTrampaVampiro
             try
             {
                 int open = Integer.parseInt(JOptionPane.showInputDialog(null,
-                        "!!Has tomado un camino en el cual esta muy oscuro.... " +
+                        "!!Has tomado un camino en el cual esta muy oscuro.... " + "\n" +
                         " pero alcanzas a ver una silueta te acercas a ella? " +
-                        "1.- Si" +
-                        "2.- No"));
+                        " 1.- Si " +
+                        " 2.- No "));
 
                 switch(open)
                 {
                     case 1 ->
                     {
-                        int impacto = aleatorio.nextInt(1) + 5;
-                        bolsa.setAlmacenOro(bolsa.getAlmacenOro() - cantidadAleatoria);
-
-                        if(bolsa.getAlmacenOro() < cantidadAleatoria)
-                        {
-                            cantidadAleatoria = bolsa.getAlmacenOro();
-                        }
-
-                        bolsa.setAlmacenOro(bolsa.getAlmacenOro() - cantidadAleatoria);
+                        int impacto = aleatorio.nextInt(11) + 10;
+                        personaje.setVida(Math.max(0,personaje.getVida() - impacto));
 
                         JOptionPane.showMessageDialog(null,"te acercas y te das cuenta que es un " +
-                                "vampiro, te chupa y roba" +  cantidadAleatoria + "puntos de vida");
-                        System.out.println("Total de vida: " + bolsa.getAlmacenOro());
+                                "vampiro, te muerde y roba " +  impacto + " puntos de vida ");
+                        System.out.println("Total de vida: " + personaje.getVida());
                         opcion = false;
                     }
                     case 2 ->
@@ -64,7 +59,7 @@ public class EventoTrampaVampiro
             }
             catch (Exception e)
             {
-                System.out.println("Seleccionaste algo mal en la decision: " + e.getMessage());
+                JOptionPane.showMessageDialog(null,"Seleccionaste algo mal en la decision: " + e.getMessage());
             }
         }
     }
