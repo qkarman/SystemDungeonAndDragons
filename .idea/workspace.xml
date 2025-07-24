@@ -5,10 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f18f686c-e9c8-450d-9aa5-7ed83ce92036" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/historia/Intro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/clases/objetosYcondicionales/BrebajeSalud.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/clases/objetosYcondicionales/Objetos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/clases/recompensas/RecompensaObjetoAleatorio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/eventosAleatorios/EventoTrampaVampiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eventosAleatorios/EventoTrampaVampiro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objetosYcondicionales/ReductorDeVida.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/clases/MenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clases/menuPrincipal/MenuPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eventosAleatorios/EventoHabilidadesSecretas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clases/eventosAleatorios/EventoHabilidadesSecretas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eventosAleatorios/EventoRecompesas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clases/recompensas/RecompensaCofreOro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eventosAleatorios/EventoTrampaVampiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clases/trampas/EventoTrampaVampiro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eventosAleatorios/EventoTrampas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clases/trampas/EventoTrampas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/historia/Intro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clases/historia/Intro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/objetosYcondicionales/Oro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clases/objetosYcondicionales/Oro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/personaje/BolsaPersonaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clases/personaje/BolsaPersonaje.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/personaje/StatsPersonaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clases/personaje/StatsPersonaje.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,46 +38,34 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2wWF7ldNOk4rkw4xHzkktOXOfae" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.EventoRecompesas.executor": "Run",
-    "Application.EventoTrampaVampiro.executor": "Run",
-    "Application.EventoTrampas.executor": "Run",
-    "Application.Intro.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.MenuPrincipal.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/st/OneDrive/Escritorio/Proyectos Avanzados Con todas las Herramientas/SystemDungeonAndDragons/src/main/java/Sistema_Inventario/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.EventoRecompesas.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EventoTrampaVampiro.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EventoTrampas.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Intro.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MenuPrincipal.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/ProyectoDnDclases/SystemDungeonAndDragons&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/st/OneDrive/Escritorio/Proyectos Avanzados Con todas las Herramientas/SystemDungeonAndDragons/src/main/java/Sistema_Inventario/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Intro">
-    <configuration name="EventoRecompesas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="eventosAleatorios.EventoRecompesas" />
-      <module name="SystemDungeonAndDragons" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="eventosAleatorios.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="EventoTrampaVampiro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="eventosAleatorios.EventoTrampaVampiro" />
+      <option name="MAIN_CLASS_NAME" value="clases.trampas.EventoTrampaVampiro" />
       <module name="SystemDungeonAndDragons" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="eventosAleatorios.*" />
+          <option name="PATTERN" value="clases.recompensas.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,11 +74,11 @@
       </method>
     </configuration>
     <configuration name="EventoTrampas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="eventosAleatorios.EventoTrampas" />
+      <option name="MAIN_CLASS_NAME" value="clases.trampas.EventoTrampas" />
       <module name="SystemDungeonAndDragons" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="eventosAleatorios.*" />
+          <option name="PATTERN" value="clases.recompensas.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,11 +87,11 @@
       </method>
     </configuration>
     <configuration name="Intro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="historia.Intro" />
+      <option name="MAIN_CLASS_NAME" value="clases.historia.Intro" />
       <module name="SystemDungeonAndDragons" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="historia.*" />
+          <option name="PATTERN" value="clases.historia.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,11 +100,24 @@
       </method>
     </configuration>
     <configuration name="MenuPrincipal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="clases.MenuPrincipal" />
+      <option name="MAIN_CLASS_NAME" value="clases.menuPrincipal.MenuPrincipal" />
       <module name="SystemDungeonAndDragons" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="clases.*" />
+          <option name="PATTERN" value="clases.menuPrincipal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecompensaCofreOro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="clases.recompensas.RecompensaCofreOro" />
+      <module name="SystemDungeonAndDragons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="clases.recompensas.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,7 +129,7 @@
       <list>
         <item itemvalue="Application.Intro" />
         <item itemvalue="Application.EventoTrampaVampiro" />
-        <item itemvalue="Application.EventoRecompesas" />
+        <item itemvalue="Application.RecompensaCofreOro" />
         <item itemvalue="Application.EventoTrampas" />
         <item itemvalue="Application.MenuPrincipal" />
       </list>
